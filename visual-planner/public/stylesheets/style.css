@@ -1,50 +1,8 @@
 body {
-  font: 14px "Futura", Helvetica, Arial, sans-serif;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/*a {
+a {
   color: #00B7FF;
-}*/
-
-/*.option-article {
-  column-count: 3;            // max # of columns
-  column-width: 300px;        // minimum width --- can do this? what if col 1 is empty? how will it collapse?
-}
-see learnlayout.com/flexbox.com
-
-display: flex;*/
-
-.container {
-  width: 100%;
-}
-
-.day_layout {
-  max-width: 600px;
-  margin: 0 auto;
-  /*height: ?????;*/
-}
-
-.title {
-  position: absolute;
-  margin-top: 0;
-}
-
-.box {
-  height: 100px;
-}
-
-.high {
-  background-color: ;
-}
-
-.medium {
-  background-color: ;
-}
-
-.low {
-  background-color: ;
-}
-
-.routine {
-  background-color: ;
 }

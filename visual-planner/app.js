@@ -4,10 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var d3 = require('d3');
-// var expressJquery = require('express-jquery');
-// var jsdom = require('jsdom');
-// var $ = require('jquery')(window);
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -25,17 +21,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(require('express-jquery')('/jquery.js'));
 
 app.use('/', routes);
 app.use('/users', users);
-
-
-
-// $(document).ready(function() {
-//   d3.selectAll("p").style("color", "blue");
-
-// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -67,7 +55,6 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 
 module.exports = app;
